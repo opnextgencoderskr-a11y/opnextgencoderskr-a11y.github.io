@@ -619,7 +619,8 @@ section {
     }
 
     .brand-story .section-title h2 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        text-align: left;
     }
 
     .brand-story .section-title p {

@@ -159,7 +159,6 @@ section {
     }
 }
 
-/* Brand Story Section */
 .brand-story {
     background-color: var(--bg-white);
 }
@@ -167,8 +166,8 @@ section {
 .brand-story .section-title h2 {
     font-size: 2.2rem;
     margin-bottom: 20px;
-    position: relative; /* For pseudo-element positioning */
-    padding-bottom: 20px; /* Space for the line */
+    position: relative;
+    padding-bottom: 20px;
 }
 
 .brand-story .section-title h2::after {
@@ -620,11 +619,16 @@ section {
     }
 
     .brand-story .section-title h2 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .brand-story .section-title p {
         font-size: 1rem;
         line-height: 1.7;
+        text-align: left;
+    }
+
+    .plan-card p {
+        text-align: left;
     }
 }

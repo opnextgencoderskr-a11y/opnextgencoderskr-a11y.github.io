@@ -609,7 +609,7 @@ section {
     }
 
     .section-title h2 {
-        font-size: 1.8rem;
+        font-size: calc(1.3rem + .6vw);
         text-align: center;
     }
 
@@ -619,8 +619,8 @@ section {
     }
 
     .brand-story .section-title h2 {
-        font-size: 1.6rem;
-        text-align: left;
+        font-size: calc(1.3rem + .6vw);
+        text-align: center;
     }
 
     .brand-story .section-title p {
@@ -631,5 +631,9 @@ section {
 
     .plan-card p {
         text-align: left;
+    }
+
+    .cta h2 {
+        font-size: calc(1.3rem + .6vw);
     }
 }

@@ -159,6 +159,39 @@ section {
     }
 }
 
+/* Brand Story Section */
+.brand-story {
+    background-color: var(--bg-white);
+}
+
+.brand-story .section-title h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    position: relative; /* For pseudo-element positioning */
+    padding-bottom: 20px; /* Space for the line */
+}
+
+.brand-story .section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--primary-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.brand-story .section-title p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @keyframes drawLine {
     from {
         opacity: 0;
@@ -174,6 +207,10 @@ section {
 
 .about {
     background-color: var(--bg-light-gray);
+}
+
+.about .section-title {
+    margin-bottom: 40px;
 }
 
 .about-card {
@@ -574,106 +611,20 @@ section {
 
     .section-title h2 {
         font-size: 1.8rem;
-        text-align: left;
+        text-align: center;
     }
 
     .section-title p {
-        font-size: 0.9rem;
-        text-align: left;
-    }
-
-    .about-card,
-    .plan-card {
-        margin-bottom: 20px;
-    }
-
-    .nexttoedu .platform-preview {
-        height: 200px;
-    }
-
-    .community-vision-graphic {
-        height: 200px;
-        margin-top: 30px;
-    }
-
-    .vision-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .vision-item .vision-icon {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .vision-item .vision-text h5,
-    .vision-item .vision-text p {
+        font-size: 1rem;
         text-align: center;
     }
 
-    .filters button {
-        margin-bottom: 10px;
+    .brand-story .section-title h2 {
+        font-size: 1.6rem;
     }
 
-    .project-card .project-img .shape-1 {
-        width: 40px;
-        height: 40px;
-    }
-
-    .project-card .project-img .shape-2 {
-        width: 60px;
-        height: 60px;
-    }
-
-    .project-card .project-img .shape-3 {
-        width: 30px;
-        height: 30px;
-    }
-
-    .cta h2 {
-        font-size: 1.5rem;
-    }
-
-    #footer {
-        padding-right: 12px;
-        padding-left: 12px;
-    }
-
-    #footer .col-lg-4,
-    #footer .col-lg-2,
-    #footer .col-lg-6 {
-        text-align: left;
-        margin-bottom: 20px;
-    }
-
-    #footer .col-lg-2.footer-links {
-        margin-top: 20px;
-    }
-
-    #footer .col-lg-6.footer-social {
-        margin-top: 20px;
-    }
-
-    #footer .footer-links ul {
-        padding-left: 0;
-    }
-
-    #footer .social-links {
-        text-align: left !important;
-    }
-
-    #footer h3,
-    #footer p {
-        text-align: left;
-    }
-
-    .plan-card h4 {
-        text-align: left;
-    }
-
-    .plan-card p {
-        text-align: left;
+    .brand-story .section-title p {
+        font-size: 1rem;
+        line-height: 1.7;
     }
 }

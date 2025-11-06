@@ -574,6 +574,7 @@ section {
 
     .section-title h2 {
         font-size: 1.8rem;
+        text-align: left;
     }
 
     .section-title p {

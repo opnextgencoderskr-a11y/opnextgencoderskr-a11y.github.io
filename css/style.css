@@ -1,8 +1,6 @@
 :root {
     --primary-color: #3B82F6;
-    /* Blue */
     --secondary-color: #7C3AED;
-    /* Purple */
     --text-dark: #1F2937;
     --text-light: #6B7280;
     --bg-white: #FFFFFF;
@@ -16,6 +14,10 @@ body {
     color: var(--text-dark);
     background-color: var(--bg-white);
     padding-top: 60px;
+}
+
+main {
+    margin: 0px 12px;
 }
 
 h1,
@@ -125,7 +127,6 @@ section {
     animation: drawLine 0.2s ease-out forwards;
 }
 
-/* Animation Delays */
 .hero-flow-container .flow-card:nth-child(1) {
     animation-delay: 0.1s;
 }
@@ -434,4 +435,239 @@ section {
     border-top: 1px solid #374151;
     padding-top: 20px;
     color: #6C757D;
+}
+
+@media (max-width: 991.98px) {
+    #hero {
+        min-height: 70vh;
+    }
+
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+
+    #hero .lead {
+        font-size: 1rem;
+    }
+
+    #hero .hero-flow-container {
+        margin-top: 40px;
+    }
+
+    .flow-card {
+        padding: 15px;
+    }
+
+    .flow-icon-wrapper {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        margin-right: 15px;
+    }
+
+    .flow-content h5 {
+        font-size: 1rem;
+    }
+
+    .flow-content p {
+        font-size: 0.8rem;
+    }
+
+    .flow-connector {
+        margin: 8px 0 8px 19px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .about-card,
+    .plan-card {
+        padding: 30px;
+    }
+
+    .about-card .icon {
+        font-size: 1.8rem;
+    }
+
+    .vision-item .vision-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        margin-right: 15px;
+    }
+
+    .vision-item h5 {
+        font-size: 1rem;
+    }
+
+    .vision-item p {
+        font-size: 0.8rem;
+    }
+
+    .community-vision-graphic {
+        height: 250px;
+    }
+
+    .project-card .project-img .shape-1 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .project-card .project-img .shape-2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .project-card .project-img .shape-3 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cta h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #hero {
+        min-height: 60vh;
+        text-align: center;
+    }
+
+    #hero .col-lg-6 {
+        text-align: center;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero .lead {
+        font-size: 0.9rem;
+    }
+
+    #hero .btn-primary,
+    #hero .btn-outline-secondary {
+        display: block;
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    #hero .hero-flow-container {
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .flow-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .flow-connector {
+        margin: 10px auto;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-title p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .about-card,
+    .plan-card {
+        margin-bottom: 20px;
+    }
+
+    .nexttoedu .platform-preview {
+        height: 200px;
+    }
+
+    .community-vision-graphic {
+        height: 200px;
+        margin-top: 30px;
+    }
+
+    .vision-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .vision-item .vision-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .vision-item .vision-text h5,
+    .vision-item .vision-text p {
+        text-align: center;
+    }
+
+    .filters button {
+        margin-bottom: 10px;
+    }
+
+    .project-card .project-img .shape-1 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .project-card .project-img .shape-2 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .project-card .project-img .shape-3 {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cta h2 {
+        font-size: 1.5rem;
+    }
+
+    #footer .col-lg-4,
+    #footer .col-lg-2,
+    #footer .col-lg-6 {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    #footer .col-lg-2.footer-links {
+        margin-top: 20px;
+    }
+
+    #footer .col-lg-6.footer-social {
+        margin-top: 20px;
+    }
+
+    #footer .footer-links ul {
+        padding-left: 0;
+    }
+
+    #footer .social-links {
+        text-align: left !important;
+    }
+
+    #footer h3,
+    #footer p {
+        text-align: left;
+    }
+
+    .plan-card h4 {
+        text-align: left;
+    }
+
+    .plan-card p {
+        text-align: left;
+    }
 }

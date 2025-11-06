@@ -635,6 +635,11 @@ section {
         font-size: 1.5rem;
     }
 
+    #footer {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
     #footer .col-lg-4,
     #footer .col-lg-2,
     #footer .col-lg-6 {
